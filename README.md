@@ -21,10 +21,10 @@ npm i react-native-simple-layout
 ## Example
 
 ```typescript
-function TextList() {
+function RectList() {
   return (
     <>
-      <Rect text={1} />
+      <Rect text={1} style={{ backgroundColor: 'red' }} />
       <Rect text={2} style={{ backgroundColor: 'green' }} />
       <Rect text={3} style={{ backgroundColor: 'blue' }} />
     </>
@@ -39,12 +39,9 @@ function TextList() {
 ```typescript
 function RowExample() {
   return (
-    <Column>
-      <Title>Row</Title>
-      <Row>
-        <TextList />
-      </Row>
-    </Column>
+    <Row>
+    	<RectList />
+    </Row>
   );
 }
 ```
@@ -57,10 +54,7 @@ function RowExample() {
 function ColumnExample() {
   return (
     <Column>
-      <Title>Column</Title>
-      <Column>
-        <TextList />
-      </Column>
+    	<RectList />
     </Column>
   );
 }
@@ -73,18 +67,15 @@ function ColumnExample() {
 ```typescript
 function StackExample() {
   return (
-    <Column>
-      <Title>Stack</Title>
-      <Row>
-        <Rect text={1} />
+    <Row>
+      <Rect text={1} />
+      <Stack style={{ left: 30, top: 30 }}>
+        <Rect text={2} style={{ backgroundColor: 'green' }} />
         <Stack style={{ left: 30, top: 30 }}>
-          <Rect text={2} style={{ backgroundColor: 'green' }} />
-          <Stack style={{ left: 30, top: 30 }}>
-            <Rect text={3} style={{ backgroundColor: 'blue' }} />
-          </Stack>
+          <Rect text={3} style={{ backgroundColor: 'blue' }} />
         </Stack>
-      </Row>
-    </Column>
+      </Stack>
+    </Row>
   );
 }
 ```

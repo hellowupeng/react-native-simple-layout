@@ -24,7 +24,7 @@ function Rect(props: RectProps) {
   );
 }
 
-function TextList() {
+function RectList() {
   return (
     <>
       <Rect text={1} />
@@ -39,7 +39,7 @@ function RowExample() {
     <Column>
       <Title>Row</Title>
       <Row>
-        <TextList />
+        <RectList />
       </Row>
     </Column>
   );
@@ -50,7 +50,7 @@ function ColumnExample() {
     <Column>
       <Title>Column</Title>
       <Column>
-        <TextList />
+        <RectList />
       </Column>
     </Column>
   );
