@@ -8,7 +8,7 @@ interface TitleProps {
 }
 
 function Title(props: TitleProps) {
-  return <Text>{props.children}</Text>;
+  return <Text style={styles.title}>{props.children}</Text>;
 }
 
 interface RectProps {
@@ -28,8 +28,8 @@ function TextList() {
   return (
     <>
       <Rect text={1} />
-      <Rect text={2} />
-      <Rect text={3} />
+      <Rect text={2} style={{ backgroundColor: 'green' }} />
+      <Rect text={3} style={{ backgroundColor: 'blue' }} />
     </>
   );
 }
@@ -60,9 +60,15 @@ function StackExample() {
   return (
     <Column>
       <Title>Stack</Title>
-      <Stack style={{ marginTop: 10 }}>
-        <Rect text={3} />
-      </Stack>
+      <Row>
+        <Rect text={1} />
+        <Stack style={{ left: 30, top: 30 }}>
+          <Rect text={2} style={{ backgroundColor: 'green' }} />
+          <Stack style={{ left: 30, top: 30 }}>
+            <Rect text={3} style={{ backgroundColor: 'blue' }} />
+          </Stack>
+        </Stack>
+      </Row>
     </Column>
   );
 }
