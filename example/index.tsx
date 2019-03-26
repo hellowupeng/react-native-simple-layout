@@ -1,13 +1,22 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Row, Column, Stack } from '../lib/layout'
+import { Row, Column, Stack } from '../lib/layout';
 import styles from './style';
 
-function Title(props) {
-  return <Text>{props.children}</Text>
+interface TitleProps {
+  children;
 }
 
-function Rect(props) {
+function Title(props: TitleProps) {
+  return <Text>{props.children}</Text>;
+}
+
+interface RectProps {
+  style?;
+  text;
+}
+
+function Rect(props: RectProps) {
   return (
     <View style={[styles.rect, props.style]}>
       <Text>{props.text}</Text>
@@ -36,7 +45,6 @@ function RowExample() {
   );
 }
 
-
 function ColumnExample() {
   return (
     <Column>
@@ -47,7 +55,6 @@ function ColumnExample() {
     </Column>
   );
 }
-
 
 function StackExample() {
   return (
