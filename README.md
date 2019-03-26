@@ -2,6 +2,89 @@
 
 A simple Semantic layout for react-native layout.
 
+![ios](./assets/ios.png)
+
+## Install
+
+###### use yarn
+
+```shell
+yarn add react-native-simple-layout
+```
+
+###### use npm
+
+```shell
+npm i react-native-simple-layout
+```
+
 ## Example
 
-![ios](./assets/ios.png)
+```typescript
+function TextList() {
+  return (
+    <>
+      <Rect text={1} />
+      <Rect text={2} style={{ backgroundColor: 'green' }} />
+      <Rect text={3} style={{ backgroundColor: 'blue' }} />
+    </>
+  );
+}
+```
+
+### Row
+
+![row](./assets/row.png)
+
+```typescript
+function RowExample() {
+  return (
+    <Column>
+      <Title>Row</Title>
+      <Row>
+        <TextList />
+      </Row>
+    </Column>
+  );
+}
+```
+
+### Column
+
+![row](./assets/column.png)
+
+```typescript
+function ColumnExample() {
+  return (
+    <Column>
+      <Title>Column</Title>
+      <Column>
+        <TextList />
+      </Column>
+    </Column>
+  );
+}
+```
+
+### Stack
+
+![row](./assets/stack.png)
+
+```typescript
+function StackExample() {
+  return (
+    <Column>
+      <Title>Stack</Title>
+      <Row>
+        <Rect text={1} />
+        <Stack style={{ left: 30, top: 30 }}>
+          <Rect text={2} style={{ backgroundColor: 'green' }} />
+          <Stack style={{ left: 30, top: 30 }}>
+            <Rect text={3} style={{ backgroundColor: 'blue' }} />
+          </Stack>
+        </Stack>
+      </Row>
+    </Column>
+  );
+}
+```
