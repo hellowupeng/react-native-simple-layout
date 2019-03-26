@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hellowupeng/react-native-layout.git"
+    "url": "git+https://github.com/hellowupeng/react-native-simple-layout"
   },
   "keywords": [
     "react native",
@@ -20,7 +20,7 @@
   "author": "hellowupeng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hellowupeng/react-native-layout/issues"
+    "url": "https://github.com/hellowupeng/react-native-simple-layout/issues"
   },
-  "homepage": "https://github.com/hellowupeng/react-native-layout#readme"
+  "homepage": "https://github.com/hellowupeng/react-native-simple-layout#readme"
 }
