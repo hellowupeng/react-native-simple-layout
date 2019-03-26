@@ -1,1 +1,1 @@
-# react-native-layout
+# react-native-simple-layout
