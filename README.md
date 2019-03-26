@@ -1,6 +1,6 @@
 # react-native-simple-layout
 
-A simple Semantic layout for react-native layout.
+A simple semantic layout for react-native.
 
 ![ios](./assets/ios.png)
 
