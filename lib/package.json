@@ -1,8 +1,8 @@
 {
   "name": "react-native-simple-layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react native simple layout",
-  "main": "layout.js",
+  "main": "layout.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
