@@ -37,6 +37,8 @@ function RectList() {
 ![row](./assets/row.png)
 
 ```typescript
+import { Row } from 'react-native-simple-layout';
+
 function RowExample() {
   return (
     <Row>
@@ -51,6 +53,8 @@ function RowExample() {
 ![row](./assets/column.png)
 
 ```typescript
+import { Column } from 'react-native-simple-layout';
+
 function ColumnExample() {
   return (
     <Column>
@@ -65,6 +69,8 @@ function ColumnExample() {
 ![row](./assets/stack.png)
 
 ```typescript
+import { Row, Stack } from 'react-native-simple-layout';
+
 function StackExample() {
   return (
     <Row>
